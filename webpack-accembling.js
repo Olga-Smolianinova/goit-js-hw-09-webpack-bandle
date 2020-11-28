@@ -42,6 +42,11 @@
 // m) npm install --save gh-pages
 
 // 8. Указываем скрипты в файле package.json раздел "scripts":
+// start (команда npm start)- запускает плагин webpack-dev-server с настройками из файла --env.mode development (которые прописаны в файле webpack.config.js);
+// build (команда npm run build) - необходим, чтобы собрать проект, запускает плагин webpack и использовать все зависимости из --env.mode production (которые прописаны в файле webpack.config.js);
+// deploy - автоматически генерирует и обновляет  в отдельной ветке ссылку на gh-pages;
+// predeploy - эту команду не делаем никогда, т.к. она запускается автоматом когда мы прописываем npm run deploy
+
 //  "scripts": {
 //     "start": "webpack-dev-server --env.mode development",
 //     "build": "webpack --env.mode production",
