@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Olga-Smolianinova/goit-js-hw-09-webpack-bandle/issues"
   },
-  "homepage": "https://github.com/Olga-Smolianinova/goit-js-hw-09-webpack-bandle",
+  "homepage": "https://olga-smolianinova.github.io/goit-js-hw-09-webpack-bandle",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
