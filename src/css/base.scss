@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: palevioletred;
+  color: wheat;
+}
+.container {
+  width: 480px;
+  margin: 0 auto;
+}
+.navList {
+  display: flex;
+  justify-content: space-evenly;
+}
+.postForm {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: wheat;
+  border: 2px solid;
+  padding: 100px 0;
+}
+.postForm input,
+.postForm textarea {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid wheat;
+  background-color: transparent;
+  color: wheat;
+  font-size: 20px;
+}
+
+.postItem {
+  color: green;
+}

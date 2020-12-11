@@ -6,6 +6,54 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello, My Webpack!</h1>
+    <header class="header container">
+      <nav class="headerNav">
+        <ul class="navList">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACTS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home container"></section>
+      <section class="about container"></section>
+      <section class="contacts container"></section>
+
+      <section class="container">
+        <ul class="posts"></ul>
+
+        <form action="submit" class="postForm">
+          <label for="title">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Enter the title"
+            />
+          </label>
+          <label for="post">
+            <textarea
+              name="post"
+              id="post"
+              cols="30"
+              rows="10"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+          <button type="submit">add new post</button>
+        </form>
+
+        <!-- Пример разметки шаблона, который будем создавать с помощью библиотеки handlebars -->
+        <!-- <div>
+          <h3>title</h3>
+          <p>text....</p>
+        </div> -->
+      </section>
+    </main>
+
+    <!-- <footer>
+      <p>copyright</p>
+    </footer> -->
   </body>
 </html>

@@ -14,11 +14,12 @@ module.exports = (env) => ({
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader, // вытянет из js
           "css-loader", // добавит все в js
           "postcss-loader", // добавляет автопрефиксы
+          "sass-loader",
         ],
       },
     ],
@@ -35,7 +36,7 @@ module.exports = (env) => ({
         useShortDoctype: true,
       },
     }),
-    new MiniCssExtractPlugin({ filename: "styles.css" }),
+    new MiniCssExtractPlugin({ filename: "styles.scss" }),
     new OptimizeCssAssetsPlugin(),
   ],
 });
